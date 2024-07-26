@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:shopeasy/features/authentication/screens/login/login.dart';
 import 'package:shopeasy/utils/constants/image_strings.dart';
 import 'package:shopeasy/utils/constants/sizes.dart';
 import 'package:shopeasy/utils/constants/text_strings.dart';
@@ -61,7 +62,9 @@ class ResetPassword extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(
+                    () => LoginScreen(),
+                  ),
                   child: Text(TTexts.done),
                 ),
               ),
