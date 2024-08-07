@@ -42,22 +42,22 @@ class StoreScreen extends StatelessWidget {
                     : TColors.white,
                 expandedHeight: 440,
                 flexibleSpace: Padding(
-                  padding: EdgeInsets.all(TSizes.defaultSpace),
+                  padding: const EdgeInsets.all(TSizes.defaultSpace),
                   child: ListView(
                     shrinkWrap: true,
-                    physics: NeverScrollableScrollPhysics(),
+                    physics: const NeverScrollableScrollPhysics(),
                     children: [
                       /// ---- Search bar
-                      SizedBox(
+                      const SizedBox(
                         height: TSizes.spaceBtwItems,
                       ),
-                      TSearchBarContainer(
+                      const TSearchBarContainer(
                         text: 'Search in Store',
                         showBorder: true,
                         showBackground: false,
                         padding: EdgeInsets.zero,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: TSizes.spaceBtwSections,
                       ),
 
@@ -66,7 +66,7 @@ class StoreScreen extends StatelessWidget {
                         title: 'Featured Brands',
                         onPressed: () {},
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: TSizes.spaceBtwSections / 1.5,
                       ),
 
@@ -76,7 +76,7 @@ class StoreScreen extends StatelessWidget {
                         itemCount: 4,
                         mainAxisExtent: 80,
                         itemBuilder: (_, index) {
-                          return TBrandCard(
+                          return const TBrandCard(
                             showBorder: false,
                           );
                         },
@@ -86,7 +86,7 @@ class StoreScreen extends StatelessWidget {
                 ),
 
                 /// ----Tabs
-                bottom: TTabBar(
+                bottom: const TTabBar(
                   tabs: [
                     Tab(
                       child: Text('Sports'),
@@ -110,7 +110,7 @@ class StoreScreen extends StatelessWidget {
           },
 
           /// --- Body
-          body: TabBarView(
+          body: const TabBarView(
             children: [
               TCategoryTab(),
               TCategoryTab(),

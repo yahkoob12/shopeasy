@@ -23,7 +23,7 @@ class TTermAndCondition extends StatelessWidget {
             onChanged: (value) {},
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: TSizes.spaceBtwItems,
         ),
         Text.rich(

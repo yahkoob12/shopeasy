@@ -19,23 +19,23 @@ class LoginForm extends StatelessWidget {
           children: [
             ///Email
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                   prefixIcon: Icon(Iconsax.direct_right),
                   labelText: TTexts.email),
             ),
-            SizedBox(
+            const SizedBox(
               height: TSizes.spaceBtwInputFields,
             ),
 
             ///Password
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 prefixIcon: Icon(Iconsax.password_check),
                 labelText: TTexts.password,
                 suffixIcon: Icon(Iconsax.eye_slash),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: TSizes.spaceBtwInputFields / 2,
             ),
 
@@ -47,20 +47,20 @@ class LoginForm extends StatelessWidget {
                 Row(
                   children: [
                     Checkbox(value: true, onChanged: (value) {}),
-                    Text(TTexts.rememberMe),
+                    const Text(TTexts.rememberMe),
                   ],
                 ),
 
                 ///Forget Password
                 TextButton(
                   onPressed: () => Get.to(
-                    () => ForgetPassword(),
+                    () => const ForgetPassword(),
                   ),
-                  child: Text(TTexts.forgetPassword),
+                  child: const Text(TTexts.forgetPassword),
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: TSizes.spaceBtwItems,
             ),
 
@@ -69,12 +69,12 @@ class LoginForm extends StatelessWidget {
               width: double.infinity,
               child: OutlinedButton(
                 onPressed: () => Get.to(
-                  () => NavigationMenu(),
+                  () => const NavigationMenu(),
                 ),
-                child: Text(TTexts.signIn),
+                child: const Text(TTexts.signIn),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: TSizes.spaceBtwItems,
             ),
 
@@ -82,8 +82,8 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () => Get.to(() => SignupScreen()),
-                child: Text(TTexts.createAccount),
+                onPressed: () => Get.to(() => const SignupScreen()),
+                child: const Text(TTexts.createAccount),
               ),
             ),
           ],

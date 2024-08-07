@@ -1,7 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:shopeasy/common/widget/custom_shapes/Container/circular_container.dart';
 import 'package:shopeasy/common/widget/images/rounded_image.dart';
 import 'package:shopeasy/features/shop/controllers/home_controller.dart';
@@ -27,7 +26,7 @@ class TPromoSlider extends StatelessWidget {
             onPageChanged: (index, _) => controller.updatePageIndicator(index),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: TSizes.spaceBtwItems,
         ),
         Center(
@@ -39,7 +38,7 @@ class TPromoSlider extends StatelessWidget {
                   TCircularContainer(
                     width: 20,
                     height: 4,
-                    margin: EdgeInsets.only(right: 10),
+                    margin: const EdgeInsets.only(right: 10),
                     backgroundColor: controller.carousalCurrentIndex.value == i
                         ? TColors.primary
                         : TColors.grey,

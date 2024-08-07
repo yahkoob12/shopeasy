@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
+
 import 'package:shopeasy/utils/constants/colors.dart';
 import 'package:shopeasy/utils/constants/sizes.dart';
 import 'package:shopeasy/utils/helpers/helper_functions.dart';

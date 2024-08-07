@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:shopeasy/features/personalization/screens/setting/settings.dart';
 
 import 'package:shopeasy/features/shop/screens/home/home.dart';
 import 'package:shopeasy/features/shop/screens/store/store.dart';
+import 'package:shopeasy/features/shop/screens/wishlist/wishlist.dart';
 import 'package:shopeasy/utils/constants/colors.dart';
 import 'package:shopeasy/utils/helpers/helper_functions.dart';
 
@@ -27,7 +29,7 @@ class NavigationMenu extends StatelessWidget {
           indicatorColor: darkMode
               ? TColors.white.withOpacity(0.1)
               : Colors.black.withOpacity(0.1),
-          destinations: [
+          destinations: const [
             NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
             NavigationDestination(icon: Icon(Iconsax.shop), label: 'Store'),
             NavigationDestination(
@@ -45,13 +47,9 @@ class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
 
   final screens = [
-    HomeScreen(),
-    StoreScreen(),
-    Container(
-      color: Colors.lightGreenAccent,
-    ),
-    Container(
-      color: Colors.limeAccent,
-    ),
+    const HomeScreen(),
+    const StoreScreen(),
+    const FevouriteScreen(),
+    const SettingsScreen(),
   ];
 }
