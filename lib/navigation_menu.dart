@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import 'package:shopeasy/features/shop/screens/home/home.dart';
+import 'package:shopeasy/features/shop/screens/store/store.dart';
 import 'package:shopeasy/utils/constants/colors.dart';
 import 'package:shopeasy/utils/helpers/helper_functions.dart';
 
@@ -24,7 +25,7 @@ class NavigationMenu extends StatelessWidget {
               controller.selectedIndex.value = index,
           backgroundColor: darkMode ? TColors.black : Colors.white,
           indicatorColor: darkMode
-              ? TColors.white.withOpacity(0.6)
+              ? TColors.white.withOpacity(0.1)
               : Colors.black.withOpacity(0.1),
           destinations: [
             NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
@@ -45,9 +46,7 @@ class NavigationController extends GetxController {
 
   final screens = [
     HomeScreen(),
-    Container(
-      color: Colors.blueGrey,
-    ),
+    StoreScreen(),
     Container(
       color: Colors.lightGreenAccent,
     ),

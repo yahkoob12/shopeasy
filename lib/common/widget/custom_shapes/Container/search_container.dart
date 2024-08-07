@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:shopeasy/utils/constants/colors.dart';
 import 'package:shopeasy/utils/constants/sizes.dart';
 import 'package:shopeasy/utils/device/device_utility.dart';
@@ -8,23 +10,25 @@ class TSearchBarContainer extends StatelessWidget {
   const TSearchBarContainer({
     super.key,
     required this.text,
-    this.icon,
+    this.icon = Iconsax.search_normal,
     this.showBackground = true,
     this.showBorder = true,
     this.onTap,
+    this.padding = const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
   });
 
   final String text;
   final IconData? icon;
   final bool showBackground, showBorder;
   final VoidCallback? onTap;
+  final EdgeInsetsGeometry padding;
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
+        padding: padding,
         child: Container(
           width: TDeviceUtils.getScreenWidth(context),
           padding: EdgeInsets.all(TSizes.md),
@@ -41,7 +45,7 @@ class TSearchBarContainer extends StatelessWidget {
             children: [
               Icon(
                 icon,
-                color: TColors.darkerGrey,
+                color: dark ? TColors.darkerGrey : Colors.grey,
               ),
               SizedBox(
                 width: TSizes.spaceBtwItems,

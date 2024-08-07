@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             ///Header
-            TPrimaryHeaderContainer(
+            const TPrimaryHeaderContainer(
               child: Column(
                 children: [
                   /// --- AppBar
@@ -31,6 +31,7 @@ class HomeScreen extends StatelessWidget {
                   /// --- SearchBar
                   TSearchBarContainer(
                     text: 'Search in Store',
+                    showBorder: false,
                   ),
                   SizedBox(
                     height: TSizes.spaceBtwSections,
@@ -66,16 +67,23 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: [
                   /// --- Promo  Slider
-                  TPromoSlider(
+                  const TPromoSlider(
                     banners: [
                       TImages.promoBanner1,
                       TImages.promoBanner2,
                       TImages.promoBanner3,
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: TSizes.spaceBtwSections,
                   ),
+
+                  /// Heading
+                  TSectionheading(
+                    title: 'Popular Products',
+                    onPressed: () {},
+                  ),
+                  const SizedBox(height: TSizes.spaceBtwItems),
 
                   /// --- Popular Product
                   TGridLayout(

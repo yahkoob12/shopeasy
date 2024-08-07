@@ -6,6 +6,7 @@ import 'package:shopeasy/common/widget/icons/t_circular_icon.dart';
 import 'package:shopeasy/common/widget/images/rounded_image.dart';
 import 'package:shopeasy/common/widget/texts/product_price_text.dart';
 import 'package:shopeasy/common/widget/texts/product_title_text.dart';
+import 'package:shopeasy/common/widget/texts/t_brand_title_text_with_verified_icon.dart';
 import 'package:shopeasy/utils/constants/colors.dart';
 import 'package:shopeasy/utils/constants/image_strings.dart';
 import 'package:shopeasy/utils/constants/sizes.dart';
@@ -86,55 +87,45 @@ class TProductCardVertical extends StatelessWidget {
                   SizedBox(
                     height: TSizes.spaceBtwItems / 2,
                   ),
-                  Row(
-                    children: [
-                      Text(
-                        'Nike',
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      SizedBox(
-                        width: TSizes.xs,
-                      ),
-                      Icon(
-                        Iconsax.verify5,
-                        color: TColors.primary,
-                        size: TSizes.iconXs,
-                      ),
-                    ],
+                  TBrandTitleWithVerifiedIcon(
+                    title: 'Nike',
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      /// Price
-                      TProductPriceText(
-                        price: '35.5',
-                      ),
-
-                      /// Add to cart button
-                      Container(
-                        decoration: BoxDecoration(
-                          color: TColors.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(TSizes.cardRadiusMd),
-                            bottomRight:
-                                Radius.circular(TSizes.productImageRadius),
-                          ),
-                        ),
-                        child: SizedBox(
-                          width: TSizes.iconLg * 1.2,
-                          height: TSizes.iconLg * 1.2,
-                          child: Center(
-                            child: Icon(Iconsax.add, color: TColors.white),
-                          ),
-                        ),
-                      ),
-                    ],
-                  )
                 ],
               ),
             ),
+            Spacer(),
+
+            /// Price Row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                /// Price
+                Padding(
+                  padding: const EdgeInsets.only(left: TSizes.sm),
+                  child: TProductPriceText(
+                    price: '35.5',
+                  ),
+                ),
+
+                /// Add to cart button
+                Container(
+                  decoration: BoxDecoration(
+                    color: TColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(TSizes.cardRadiusMd),
+                      bottomRight: Radius.circular(TSizes.productImageRadius),
+                    ),
+                  ),
+                  child: SizedBox(
+                    width: TSizes.iconLg * 1.2,
+                    height: TSizes.iconLg * 1.2,
+                    child: Center(
+                      child: Icon(Iconsax.add, color: TColors.white),
+                    ),
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
