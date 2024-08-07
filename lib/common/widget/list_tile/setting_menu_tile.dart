@@ -18,7 +18,7 @@ class TSettingMenuTile extends StatelessWidget {
     return ListTile(
       leading: Icon(
         icon,
-        size: 28,
+        size: 27,
         color: TColors.primary,
       ),
       title: Text(
