@@ -31,7 +31,7 @@ class TCircularImage extends StatelessWidget {
       decoration: BoxDecoration(
         color: backgroundColor ??
             (THelperFunctions.isDarkMode(context)
-                ? TColors.black
+                ? Colors.transparent
                 : TColors.white),
       ),
       child: Center(

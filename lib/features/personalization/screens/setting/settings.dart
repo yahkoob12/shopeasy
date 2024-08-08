@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import 'package:shopeasy/common/widget/appbar/appbar.dart';
@@ -7,6 +8,7 @@ import 'package:shopeasy/common/widget/list_tile/setting_menu_tile.dart';
 
 import 'package:shopeasy/common/widget/list_tile/user_profile_tile.dart';
 import 'package:shopeasy/common/widget/texts/section_heading.dart';
+import 'package:shopeasy/features/personalization/screens/profile/profile.dart';
 
 import 'package:shopeasy/utils/constants/sizes.dart';
 
@@ -34,7 +36,8 @@ class SettingsScreen extends StatelessWidget {
                   ),
 
                   /// User Profile card
-                  const TUserProfileTile(),
+                  TUserProfileTile(
+                      onPressed: () => Get.to(() => ProfileScreen())),
                   const SizedBox(
                     height: TSizes.spaceBtwSections,
                   ),

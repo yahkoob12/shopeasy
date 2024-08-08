@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shopeasy/common/styles/shadows.dart';
 import 'package:shopeasy/common/widget/custom_shapes/Container/rounded_container.dart';
@@ -7,6 +8,7 @@ import 'package:shopeasy/common/widget/images/rounded_image.dart';
 import 'package:shopeasy/common/widget/texts/product_price_text.dart';
 import 'package:shopeasy/common/widget/texts/product_title_text.dart';
 import 'package:shopeasy/common/widget/texts/t_brand_title_text_with_verified_icon.dart';
+import 'package:shopeasy/features/shop/screens/product_datails/product_details.dart';
 import 'package:shopeasy/utils/constants/colors.dart';
 import 'package:shopeasy/utils/constants/image_strings.dart';
 import 'package:shopeasy/utils/constants/sizes.dart';
@@ -19,7 +21,7 @@ class TProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => ProductDetails()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
