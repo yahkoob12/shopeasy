@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+
 import 'package:iconsax/iconsax.dart';
 import 'package:shopeasy/common/widget/icons/t_circular_icon.dart';
 import 'package:shopeasy/utils/constants/colors.dart';

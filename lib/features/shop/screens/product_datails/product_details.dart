@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 import 'package:shopeasy/common/widget/texts/section_heading.dart';
@@ -8,6 +9,7 @@ import 'package:shopeasy/features/shop/screens/product_datails/widgets/product_a
 import 'package:shopeasy/features/shop/screens/product_datails/widgets/product_details_image_slider.dart';
 import 'package:shopeasy/features/shop/screens/product_datails/widgets/product_meta_data.dart';
 import 'package:shopeasy/features/shop/screens/product_datails/widgets/rating_share_widget.dart';
+import 'package:shopeasy/features/shop/screens/product_reviews/product_reviews.dart';
 import 'package:shopeasy/utils/constants/sizes.dart';
 
 import 'package:shopeasy/utils/helpers/helper_functions.dart';
@@ -82,14 +84,15 @@ class ProductDetails extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       TSectionheading(
-                        title: 'Rewies (999)',
+                        title: 'Reviews (999)',
                         showActionButton: false,
                       ),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () => Get.to(() => TProductReviewsScreen()),
                         icon: Icon(
                           Iconsax.arrow_right3,
                           size: 18,
+                          color: Colors.white,
                         ),
                       ),
                     ],
