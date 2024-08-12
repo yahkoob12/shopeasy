@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopeasy/common/widget/appbar/appbar.dart';
-import 'package:shopeasy/common/widget/productscart/cart_menu_icon.dart';
+import 'package:shopeasy/common/widget/products/cart/cart_menu_icon.dart';
 import 'package:shopeasy/utils/constants/colors.dart';
 import 'package:shopeasy/utils/constants/text_strings.dart';
 

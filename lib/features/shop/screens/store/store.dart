@@ -4,7 +4,7 @@ import 'package:shopeasy/common/widget/appbar/tabbar.dart';
 import 'package:shopeasy/common/widget/custom_shapes/Container/search_container.dart';
 import 'package:shopeasy/common/widget/layouts/grid_layout.dart';
 import 'package:shopeasy/common/widget/brands/brand_card.dart';
-import 'package:shopeasy/common/widget/productscart/cart_menu_icon.dart';
+import 'package:shopeasy/common/widget/products/cart/cart_menu_icon.dart';
 import 'package:shopeasy/common/widget/texts/section_heading.dart';
 import 'package:shopeasy/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:shopeasy/utils/constants/colors.dart';

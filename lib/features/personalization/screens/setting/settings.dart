@@ -8,6 +8,7 @@ import 'package:shopeasy/common/widget/list_tile/setting_menu_tile.dart';
 
 import 'package:shopeasy/common/widget/list_tile/user_profile_tile.dart';
 import 'package:shopeasy/common/widget/texts/section_heading.dart';
+import 'package:shopeasy/features/personalization/screens/address/address.dart';
 import 'package:shopeasy/features/personalization/screens/profile/profile.dart';
 
 import 'package:shopeasy/utils/constants/sizes.dart';
@@ -63,7 +64,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.safe_home,
                     title: 'My Addresses',
                     subTitle: 'Set Shopping Delivery address',
-                    onTap: () {},
+                    onTap: () => Get.to(() => UserAddressScreen()),
                   ),
                   TSettingMenuTile(
                     icon: Iconsax.shopping_cart,

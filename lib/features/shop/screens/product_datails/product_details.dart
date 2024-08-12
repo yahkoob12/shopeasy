@@ -12,14 +12,14 @@ import 'package:shopeasy/features/shop/screens/product_datails/widgets/rating_sh
 import 'package:shopeasy/features/shop/screens/product_reviews/product_reviews.dart';
 import 'package:shopeasy/utils/constants/sizes.dart';
 
-import 'package:shopeasy/utils/helpers/helper_functions.dart';
+//import 'package:shopeasy/utils/helpers/helper_functions.dart';
 
 class ProductDetails extends StatelessWidget {
   const ProductDetails({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
+    // final dark = THelperFunctions.isDarkMode(context);
     return Scaffold(
       bottomNavigationBar: TBottomAddToCart(),
       body: SingleChildScrollView(
