@@ -4,9 +4,9 @@ import 'package:iconsax/iconsax.dart';
 
 import 'package:shopeasy/common/widget/appbar/appbar.dart';
 import 'package:shopeasy/common/widget/custom_shapes/Container/primary_header_container.dart';
-import 'package:shopeasy/common/widget/list_tile/setting_menu_tile.dart';
+import 'package:shopeasy/common/widget/list_tiles/setting_menu_tile.dart';
 
-import 'package:shopeasy/common/widget/list_tile/user_profile_tile.dart';
+import 'package:shopeasy/common/widget/list_tiles/user_profile_tile.dart';
 import 'package:shopeasy/common/widget/texts/section_heading.dart';
 import 'package:shopeasy/features/personalization/screens/address/address.dart';
 import 'package:shopeasy/features/personalization/screens/profile/profile.dart';

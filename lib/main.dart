@@ -19,5 +19,5 @@ Future<void> main() async {
   //Todo:Await Native Splash
   //Todo:Initialize Firebase
   //Todo:Initialize Authentication
-  runApp(const App());
+  runApp(App());
 }

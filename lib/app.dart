@@ -18,7 +18,7 @@ class App extends StatelessWidget {
       darkTheme: TAppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
       scrollBehavior: MyCustomScrollBehavior(),
-      home: const OnBoardingScreen(),
+      home: OnBoardingScreen(),
     );
   }
 }

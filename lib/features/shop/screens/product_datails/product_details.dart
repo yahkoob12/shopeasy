@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 import 'package:shopeasy/common/widget/texts/section_heading.dart';
+import 'package:shopeasy/features/shop/screens/checkout/checkout.dart';
 import 'package:shopeasy/features/shop/screens/product_datails/widgets/bottom_add_to_cart_widget.dart';
 import 'package:shopeasy/features/shop/screens/product_datails/widgets/product_attributes.dart';
 
@@ -52,7 +53,8 @@ class ProductDetails extends StatelessWidget {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                        onPressed: () {}, child: Text('CheckOut')),
+                        onPressed: () => Get.to(() => CheckoutScreen()),
+                        child: Text('CheckOut')),
                   ),
 
                   /// - Description
