@@ -41,6 +41,21 @@ class TBillingAmountSection extends StatelessWidget {
           ],
         ),
 
+        ///Tax Fee
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              'Tax Fee',
+              style: Theme.of(context).textTheme.bodyMedium,
+            ),
+            Text(
+              '\$6.0',
+              style: Theme.of(context).textTheme.labelLarge,
+            ),
+          ],
+        ),
+
         /// Order Total
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
