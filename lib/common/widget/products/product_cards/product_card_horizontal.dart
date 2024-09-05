@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:shopeasy/common/styles/shadows.dart';
+
 import 'package:shopeasy/common/widget/custom_shapes/Container/rounded_container.dart';
 import 'package:shopeasy/common/widget/icons/t_circular_icon.dart';
 import 'package:shopeasy/common/widget/images/rounded_image.dart';

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:shopeasy/common/widget/appbar/appbar.dart';
 import 'package:shopeasy/common/widget/appbar/tabbar.dart';
 import 'package:shopeasy/common/widget/custom_shapes/Container/search_container.dart';
@@ -6,6 +7,7 @@ import 'package:shopeasy/common/widget/layouts/grid_layout.dart';
 import 'package:shopeasy/common/widget/brands/brand_card.dart';
 import 'package:shopeasy/common/widget/products/cart/cart_menu_icon.dart';
 import 'package:shopeasy/common/widget/texts/section_heading.dart';
+import 'package:shopeasy/features/shop/screens/brand/all_brands.dart';
 import 'package:shopeasy/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:shopeasy/utils/constants/colors.dart';
 import 'package:shopeasy/utils/constants/sizes.dart';
@@ -64,7 +66,7 @@ class StoreScreen extends StatelessWidget {
                       /// ---- Featured Brands
                       TSectionheading(
                         title: 'Featured Brands',
-                        onPressed: () {},
+                        onPressed: () => Get.to(() => AllBrandsScreen()),
                       ),
                       const SizedBox(
                         height: TSizes.spaceBtwSections / 1.5,
@@ -73,7 +75,7 @@ class StoreScreen extends StatelessWidget {
                       /// --- Brand GRID
 
                       TGridLayout(
-                        itemCount: 4,
+                        itemCount: 5,
                         mainAxisExtent: 80,
                         itemBuilder: (_, index) {
                           return const TBrandCard(

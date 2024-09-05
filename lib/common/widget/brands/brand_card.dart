@@ -21,6 +21,8 @@ class TBrandCard extends StatelessWidget {
     // final isDark = THelperFunctions.isDarkMode(context);
     return GestureDetector(
       onTap: onTap,
+
+      /// Container Design
       child: TRoundedContainer(
         padding: const EdgeInsets.all(TSizes.sm),
         showBorder: showBorder,
